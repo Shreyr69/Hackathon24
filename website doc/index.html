@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Container Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Dock Manager
+    </h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="section">
+        <h2>Containers</h2>
+        <div id="container-list">
+            <div class="container-item">
+                <h3>Web Server</h3>
+                <p>Status: Running</p>
+                <p>Image: nginx:latest</p>
+                <p>CPU Usage: 5%</p>
+                <p>Memory Usage: 100MB</p>
+              </div>
+              <div class="container-item">
+                <h3>Database</h3>
+                <p>Status: Stopped</p>
+                <p>Image: postgres:latest</p>
+                <p>CPU Usage: N/A</p>
+                <p>Memory Usage: N/A</p>
+              </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>Actions</h2>
+        <div id="actions">
+          <button id="start-btn">Start</button>
+          <button id="stop-btn">Stop</button>
+          <button id="restart-btn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
