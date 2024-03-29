@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOCK MANAGER </title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-square-o "></i>&nbsp;DOCK MANAGER</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Full Screen </a></li>
+                        <li><a href="#">Edit</a></li>
+                        <li><a href="#">Report Bug</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li class="text-center user-image-back">
+                        <img src="assets/img/find_user.png" class="img-responsive" />
+
+                    </li>
+
+
+                    <li>
+                        <a href="index.html"><i class="fa fa-desktop "></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>Containers<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Running</a>
+                            </li>
+                            <li>
+                                <a href="#">Stopped</a>
+                            </li>
+                            <li>
+                                <a href="#">All Containers</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-table "></i>Networks</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>Logs</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap "></i>Images<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Pull</a>
+                            </li>
+                            <li>
+                                <a href="#">Remove</a>
+                            </li>
+                            <li>
+                                <a href="#">Inspect<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Local</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Remote</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pulled</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-qrcode "></i>Tabs & Panels</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i>Charts</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-edit "></i>Settings</a>
+                    </li>
+                    <li>
+                        <a href="blank.html"><i class="fa fa-table "></i>Help</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Dashboard</h2>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <hr />
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <h5>Used Storage</h5>
+                        <div class="panel panel-primary text-center no-boder bg-color-blue">
+                            <div class="panel-body">
+                                <i class="fa fa-bar-chart-o fa-5x"></i>
+                                <h3>120 GB </h3>
+                            </div>
+                            <div class="panel-footer back-footer-blue">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <h5>IMAGES</h5>
+                        <div class="alert alert-info text-center">
+                            <i class="fa fa-desktop fa-5x"></i>
+                            <h3>Local </h3>
+                            view local images
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>DOCKER CONTAINERS</h5>
+                        <a href="#" class="btn btn-default">CPU Load</a>
+                        <a href="#" class="btn btn-primary">CPU Cores</a>
+                        <a href="#" class="btn btn-danger">Mempory Load</a>
+                        <a class="btn btn-success">Used Memory</a>
+
+                        <a href="#" class="btn btn-info">Storage Load</a>
+                        <!-- <a  href="#" class="btn btn-warning">Used Storage</a> -->
+                        <br />
+                        <br />
+                        <h5>RUNNING CONTAINERS</h5>
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">40% Complete (success)</span>
+                            </div>
+                        </div>
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="20"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+                <!-- <hr />
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Text Input Example</label>
+                            <input class="form-control" />
+                            <p class="help-block">Help text here.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Click to see blank page</label>
+                        <a href="blank.html" target="_blank" class="btn btn-danger btn-lg btn-block">BLANK PAGE</a>
+                    </div>
+                    <div class="col-md-4">
+                        For More Examples Please visit official bootstrap website <a href="http://getbootstrap.com" target="_blank">getbootstrap.com</a>
+                    </div>
+                </div>
+                <hr /> -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>CONTAINER CPU USUAGE</h5>
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>CONTAINER ID</th>
+                                    <th>PROCESS NAME</th>
+                                    <th>CPU USER</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>user.slice</td>
+                                    <td>web content </td>
+                                    <td>81,895,280,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>user.slice</td>
+                                    <td>firefox</td>
+                                    <td>81,895,280,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>user.slice</td>
+                                    <td>gnome-shell</td>
+                                    <td>81,895,280,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>user.slice</td>
+                                    <td>java</td>
+                                    <td>81,895,280,000,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="col-md-6">
+                        <h5>CONTAINER MEMORY STACKS</h5>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>CONTAINER ID</th>
+                                        <th>PROCESS NAME</th>
+                                        <th>USUAGE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="success">
+                                        <td>1</td>
+                                        <td>user.slice</td>
+                                        <td>ibus-daemon</td>
+                                        <td>13.648GB</td>
+                                    </tr>
+                                    <tr class="info">
+                                        <td>2</td>
+                                        <td>user.slice</td>
+                                        <td>metricbeat</td>
+                                        <td>13.642GB</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>3</td>
+                                        <td>user.slice</td>
+                                        <td>atom</td>
+                                        <td>13.671GB</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>4</td>
+                                        <td>user.slice</td>
+                                        <td>less</td>
+                                        <td>13.528GB</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <hr />
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Container</h5>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                my-web-app-image
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est
+                                    vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
+                                    fringilla augue.</p>
+                            </div>
+                            <div class="panel-footer">
+                                Running Status: Active
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>IMAGES</h5>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                            class="collapsed">my-image-1</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                    <div class="panel-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapseTwo">my-image-2</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
+                                    <div class="panel-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt.
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                            class="collapsed">my-image-3</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+
+
+                                    <div class="panel-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>OPTIMIZATION</h5>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">CONTAINERS RUNNING </a>
+                            </li>
+                            <li class=""><a href="#profile" data-toggle="tab">LOCAL IMAGES</a>
+                            </li>
+                            <li class=""><a href="#messages" data-toggle="tab">TERMINATE ALL</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade active in" id="home">
+                                <h4>CONTAINERS RUNNING</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="profile">
+                                <h4>LOCAL IMAGES</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                </p>
+
+                            </div>
+                            <div class="tab-pane fade" id="messages">
+                                <h4>TERMINATE ALL</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit eserunt mollit anim id est
+                                    laborum.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+                <hr />
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>Information</h5>
+                        Discover Dock Manager: your ultimate Docker container management solution. Streamline deployment,
+                        monitoring, and scaling with ease. Simplify your workflow and accelerate application delivery
+                        today!
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>
